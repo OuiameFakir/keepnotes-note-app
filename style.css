@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popping', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(images/wall.jpg);
+    background-attachment: fixed;
+    background-size : cover ;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: gray;
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0px 5px 10px gray;
+
+}
+
+header .logo img{
+    width: 90px;
+    margin-left: 20px;
+
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+    
+}
+header ul li a:hover , .active{
+    color:#eeb099;
+    font-weight: bolder;
+    border-bottom: #4e7e94 solid 3px;
+}
+
+.home{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 150px 100px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input-box{
+    position: relative;
+    width: 900px;
+    min-height: 150px;
+    background: #ededed;
+    color: #000000;
+    padding: 20px;
+    margin: 20px 0 ;
+    outline: 2px gray solid;
+    border-radius: 6px;
+}
+.input-box .del{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.input-box:hover{
+    border-left: #ef9270 8px solid;
+    color: #4e7e94;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #242624;
+    z-index: 1233;
+    padding: 30px 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 30%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-col h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ef9270;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #4e7e94;
+    padding-left: 5px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color:#eeb099;
+    margin-right:0 10px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.footer-col .social-links a:hover{
+    color: #ffffff;
+    background-color: #4e7e94;
+}
+
+
+@media screen and (min-width : 800px) and (max-width : 1000px ){ 
+
+    .input-box{
+        width:700px;
+        
+    }
+}
+@media screen and (max-width : 800px ) {
+
+    .input-box{
+        width: 500px;
+    }
+}

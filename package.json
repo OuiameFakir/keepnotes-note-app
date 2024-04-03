@@ -1,0 +1,12 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "Note Application project using JavaScript, CSS and HTML\r Notes App, a user-friendly web application created with HTML, CSS, and JavaScript. \r This handy tool allows you to easily create, manage, and remove notes.\r Helping you stay organized and keep track of important information.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
